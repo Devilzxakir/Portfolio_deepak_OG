@@ -27,6 +27,7 @@
                     <li class="nav-item"><a class="nav-link fw-semibold" href="#skills" style="color: #fff !important;">Skills</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="#projects" style="color: #fff !important;">Projects</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="#experience" style="color: #fff !important;">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#certifications" style="color: #fff !important;">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link fw-semibold" href="#contact" style="color: #fff !important;">Contact</a></li>
                 </ul>
                 <button class="btn btn-outline-light ms-3" id="darkModeToggle">
@@ -88,6 +89,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
                         <h4><i class="fas fa-code me-2"></i>Programming</h4>
+                        <p class="text-muted small">Data analysis and automation scripts</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #1E3A8A, #3B82F6); color: #fff;">Python</span>
                         </div>
@@ -96,6 +98,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
                         <h4><i class="fas fa-database me-2"></i>Database</h4>
+                        <p class="text-muted small">Query writing and database management</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #14B8A6, #2DD4BF); color: #fff;">MySQL</span>
                             <span class="badge" style="background: linear-gradient(135deg, #3B82F6, #60A5FA); color: #fff;">PostgreSQL</span>
@@ -105,6 +108,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="300">
                         <h4><i class="fas fa-cloud me-2"></i>Microsoft Fabric</h4>
+                        <p class="text-muted small">Data pipeline and lakehouse management</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #06B6D4, #22D3EE); color: #fff;">Data Factory</span>
                             <span class="badge" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA); color: #fff;">Lakehouse</span>
@@ -116,6 +120,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="400">
                         <h4><i class="fas fa-tools me-2"></i>Tools</h4>
+                        <p class="text-muted small">Data analysis and visualization</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #F59E0B, #FBBF24); color: #fff;">Excel</span>
                             <span class="badge" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA); color: #fff;">Power BI</span>
@@ -125,6 +130,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="500">
                         <h4><i class="fas fa-chart-pie me-2"></i>Data Visualization</h4>
+                        <p class="text-muted small">Creating insights with visual reports</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #3B82F6, #60A5FA); color: #fff;">Dashboard Design</span>
                             <span class="badge" style="background: linear-gradient(135deg, #10B981, #34D399); color: #fff;">Reports</span>
@@ -135,6 +141,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="skill-card card p-4 h-100">
                         <h4><i class="fas fa-code-branch me-2"></i>Libraries</h4>
+                        <p class="text-muted small">Python data analysis libraries</p>
                         <div class="skill-tags">
                             <span class="badge" style="background: linear-gradient(135deg, #6366F1, #818CF8); color: #fff;">Pandas</span>
                             <span class="badge" style="background: linear-gradient(135deg, #EC4899, #F472B6); color: #fff;">NumPy</span>
@@ -244,6 +251,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 mb-4 project-card" data-category="analysis" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">OLA Ride Booking Analysis</h4>
+                            <p class="card-text">End-to-end analysis of 40,000+ ride bookings with data cleaning, EDA, visualization, and business insights.</p>
+                            <h6 class="mt-3"><strong>Key Metrics:</strong></h6>
+                            <div>
+                                <span class="kpi-card kpi-sales">40,539 Bookings</span>
+                                <span class="kpi-card kpi-profit">62.2% Success Rate</span>
+                                <span class="kpi-card kpi-orders">Rs. 13.7M Revenue</span>
+                            </div>
+                            <h6><strong>Analysis:</strong></h6>
+                            <ul>
+                                <li>Cancellation root-cause analysis</li>
+                                <li>Revenue & vehicle type breakdown</li>
+                                <li>Peak hours & location insights</li>
+                                <li>10 SQL queries for reporting</li>
+                            </ul>
+                            <h6 class="mt-3"><strong>Tools Used:</strong></h6>
+                            <p>Python, Pandas, Matplotlib, SQL</p>
+                            <a href="{{ url_for('static', filename='files/OLA_Ride_Analysis.pptx') }}"
+                                class="btn btn-success me-2" download><i class="fas fa-download me-2"></i>Download
+                                PPT</a>
+                            <a href="https://github.com/Devilzxakir/OLA_ride_analysis" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -257,11 +291,59 @@
                         <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h4>IT Support Specialist</h4>
-                                <p class="text-muted">2020 - Present</p>
-                                <p>Providing technical support for system operations, troubleshooting hardware and
-                                    software issues, and maintaining IT infrastructure. Developed strong analytical and
-                                    problem-solving skills through daily technical challenges.</p>
+                                <h4>Production Support Engineer</h4>
+                                <p class="text-muted">Nelito System's Pvt. Ltd. | April 2023 - Present</p>
+                                <ul>
+                                    <li>Resolved an average of 30+ help desk tickets weekly, coordinating with multi-level stakeholders to streamline issue resolution.</li>
+                                    <li>Managed system backups and restores, achieving a 100% data recovery rate and minimizing data loss risks.</li>
+                                    <li>Developed standardized reports, resulting in a 15% reduction in decision-making time for executive management.</li>
+                                    <li>Provided technical support to users, achieving a 95% customer satisfaction rating and resolving 80% of issues.</li>
+                                    <li>Managed system upgrades and maintenance, ensuring 99.9% uptime and minimizing disruptions to end-users.</li>
+                                    <li>Developed and implemented system monitoring tools that improved system performance by 25% and reduced downtime.</li>
+                                    <li>Reduced response time to critical alerts by 50%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Data Analytics Essentials</h4>
+                            <p class="text-center text-muted mb-4"><i class="fas fa-certificate me-2"></i>Cisco Networking Academy</p>
+                            <p class="card-text">Comprehensive data analytics certification covering fundamental tools and techniques used by professional data analysts.</p>
+                            <h6 class="mt-3"><strong>Skills Learned:</strong></h6>
+                            <div class="skill-tags mb-3">
+                                <span class="badge" style="background: linear-gradient(135deg, #10B981, #34D399); color: #fff;">Excel</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #3B82F6, #60A5FA); color: #fff;">SQL</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA); color: #fff;">Tableau</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #F59E0B, #FBBF24); color: #fff;">Data Visualization</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #EC4899, #F472B6); color: #fff;">Statistical Analysis</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #14B8A6, #2DD4BF); color: #fff;">Data Cleaning</span>
+                                <span class="badge" style="background: linear-gradient(135deg, #6366F1, #818CF8); color: #fff;">Python</span>
+                            </div>
+                            <h6><strong>Course Topics:</strong></h6>
+                            <ul class="card-text">
+                                <li>Data Gathering and Investigation</li>
+                                <li>Data Preparation and Cleaning</li>
+                                <li>Transforming Data with Excel</li>
+                                <li>Analyze Data Using Statistics</li>
+                                <li>Relational Databases and SQL</li>
+                                <li>Structured Query Language (SQL) Queries</li>
+                                <li>Tableau for Data Visualization</li>
+                                <li>Ethics and Bias in Data</li>
+                                <li>Data Analysis Projects</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="{{ url_for('static', filename='files/DataAnalyticsCertification.pdf') }}" target="_blank" class="btn btn-primary"><i class="fas fa-certificate me-2"></i>View Certificate</a>
                             </div>
                         </div>
                     </div>
@@ -314,7 +396,7 @@
 
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p>&copy; 2024 Deepak Sahu. All Rights Reserved.</p>
+            <p>&copy; 2026 Deepak Sahu. All Rights Reserved.</p>
         </div>
     </footer>
 
