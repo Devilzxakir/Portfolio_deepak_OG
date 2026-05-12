@@ -11,6 +11,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="particle-canvas"></canvas>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar"
@@ -41,9 +45,9 @@
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6 order-lg-1 order-2">
-                    <div class="hero-content" data-aos="fade-right" data-aos-delay="100">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="200">Deepak Sahu</h1>
-                        <h2 class="mb-4" style="color: rgba(255,255,255,0.9);" data-aos="fade-up" data-aos-delay="300">Data Analyst</h2>
+                    <div class="hero-content hero-card reveal fade-up" data-aos="fade-right" data-aos-delay="100">
+                        <h1 class="display-4 fw-bold hero-name" data-aos="fade-up" data-aos-delay="200">Deepak Sahu</h1>
+                        <h2 class="mb-4 reveal fade-up" style="color: rgba(255,255,255,0.9);" data-aos="fade-up" data-aos-delay="300">Data Analyst</h2>
                         <p class="lead mb-4" data-aos="fade-up" data-aos-delay="400">Transforming raw data into actionable insights to drive business decisions</p>
                         <p class="mb-4" style="color: rgba(255,255,255,0.8);" data-aos="fade-up" data-aos-delay="500">IT Professional transitioning into Data Analytics with expertise in Python, SQL, Excel, Power BI & Microsoft Fabric</p>
                         <div class="d-flex gap-3" data-aos="fade-up" data-aos-delay="600">
@@ -51,8 +55,8 @@
                             <a href="#contact" class="btn btn-outline-dark btn-lg">Contact Me</a>
                         </div>
                         <div class="social-links mt-4" data-aos="fade-up" data-aos-delay="700">
-                            <a href="#" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="#" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/deepak-sahu-67333228a/" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://github.com/Devilzxakir" target="_blank" class="me-3"><i class="fab fa-github fa-2x"></i></a>
                             <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
                         </div>
                     </div>
@@ -72,7 +76,7 @@
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="about-card card p-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card card p-4 reveal fade-up" data-aos="fade-up" data-aos-delay="100">
                             <p class="lead">Data Analyst with a background in IT support and system operations, experienced in leveraging SQL, Python, and Excel to analyze data and drive insights.</p>
                             <p>Demonstrated ability to clean, transform, and analyze large datasets, build dashboards, and identify trends to support business decisions.</p>
                             <p>Hands-on experience with real-world datasets, delivering actionable insights to improve operational efficiency.</p>
@@ -87,7 +91,7 @@
             <h2 class="section-title" data-aos="fade-up">Skills</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card card p-4 h-100 reveal fade-up" data-aos="fade-up" data-aos-delay="100">
                         <h4><i class="fas fa-code me-2"></i>Programming & Querying</h4>
                         <p class="text-muted small">Data analysis and automation</p>
                         <div class="skill-tags">
@@ -97,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card card p-4 h-100 reveal fade-up" data-aos="fade-up" data-aos-delay="200">
                         <h4><i class="fas fa-chart-bar me-2"></i>Data Visualization</h4>
                         <p class="text-muted small">Visual reports and dashboards</p>
                         <div class="skill-tags">
@@ -108,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="skill-card card p-4 h-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card card p-4 h-100" reveal fade-up"
                         <h4><i class="fas fa-tools me-2"></i>Tools & Technologies</h4>
                         <p class="text-muted small">Database and version control</p>
                         <div class="skill-tags">
@@ -167,7 +171,7 @@
                 <button class="btn btn-outline-primary" data-filter="tool">Tool</button>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-4 project-card" data-category="visualization" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-4 mb-4 project-card reveal fade-up" data-category="visualization" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Sales Data Analysis Dashboard</h4>
@@ -191,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 project-card" data-category="analysis" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4 mb-4 project-card reveal fade-up" data-category="analysis" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Customer Segmentation Analysis</h4>
@@ -213,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 project-card" data-category="tool" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-4 mb-4 project-card reveal fade-up" data-category="tool" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Automated Data Analysis Tool</h4>
@@ -232,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 project-card" data-category="analysis" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-4 mb-4 project-card reveal fade-up" data-category="analysis" data-aos="fade-up" data-aos-delay="400">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">Pizza Sales SQL Project</h4>
@@ -254,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 project-card" data-category="analysis" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-4 mb-4 project-card reveal fade-up" data-category="analysis" data-aos="fade-up" data-aos-delay="500">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title">OLA Ride Booking Analysis</h4>
@@ -367,12 +371,15 @@
             <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
             <div class="row">
                 <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="100">
-                    <div class="contact-info">
+                    <div class="contact-info" style="position: relative;">
+                        <div class="contact-ripple" style="width:80px;height:80px;"></div>
+                        <div class="contact-ripple" style="width:80px;height:80px;"></div>
+                        <div class="contact-ripple" style="width:80px;height:80px;"></div>
                         <h4>Get in Touch</h4>
                         <p><i class="fas fa-envelope me-2"></i>dps2782002@gmail.com</p>
                         <p><i class="fas fa-phone me-2"></i>+91 78208 72792</p>
-                        <p><i class="fab fa-linkedin me-2"></i><a href="#">LinkedIn Profile</a></p>
-                        <p><i class="fab fa-github me-2"></i><a href="#">GitHub Profile</a></p>
+                        <p><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/deepak-sahu-67333228a/" target="_blank">LinkedIn Profile</a></p>
+                        <p><i class="fab fa-github me-2"></i><a href="https://github.com/Devilzxakir" target="_blank">GitHub Profile</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
@@ -411,6 +418,109 @@
             once: true,
             offset: 100
         });
+
+        const cursor = document.getElementById('cursor');
+        const cursorRing = document.getElementById('cursor-ring');
+
+        let mx = window.innerWidth / 2;
+        let my = window.innerHeight / 2;
+        let rx = mx, ry = my;
+
+        document.addEventListener('mousemove', e => {
+            mx = e.clientX;
+            my = e.clientY;
+            cursor.style.left = mx + 'px';
+            cursor.style.top = my + 'px';
+        });
+
+        function animRing() {
+            rx += (mx - rx) * 0.14;
+            ry += (my - ry) * 0.14;
+            cursorRing.style.left = rx + 'px';
+            cursorRing.style.top = ry + 'px';
+            requestAnimationFrame(animRing);
+        }
+        animRing();
+
+        (function () {
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            let W, H;
+            const particles = [];
+            const NUM = 80;
+            const MAX_DIST = 140;
+
+            function isDarkMode() {
+                return document.body.classList.contains('dark-mode');
+            }
+
+            function resize() {
+                W = canvas.width = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            function Particle() {
+                this.x = Math.random() * W;
+                this.y = Math.random() * H;
+                this.vx = (Math.random() - 0.5) * 0.55;
+                this.vy = (Math.random() - 0.5) * 0.55;
+                this.r = Math.random() * 1.8 + 0.6;
+                this.alpha = Math.random() * 0.6 + 0.2;
+            }
+            Particle.prototype.update = function () {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > W) this.vx *= -1;
+                if (this.y < 0 || this.y > H) this.vy *= -1;
+            };
+
+            for (let i = 0; i < NUM; i++) particles.push(new Particle());
+
+            const particleColor = () => isDarkMode() ? '0,229,255' : '30,58,138';
+            const lineColor = () => isDarkMode() ? '0,229,255' : '59,130,246';
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+
+                for (let i = 0; i < NUM; i++) {
+                    for (let j = i + 1; j < NUM; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const d = Math.sqrt(dx * dx + dy * dy);
+                        if (d < MAX_DIST) {
+                            const opacity = (1 - d / MAX_DIST) * 0.25;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(${lineColor()},${opacity})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${particleColor()},${p.alpha})`;
+                    ctx.fill();
+                    p.update();
+                });
+
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
     </script>
 </body>
 
